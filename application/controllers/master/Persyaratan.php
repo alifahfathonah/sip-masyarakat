@@ -30,7 +30,7 @@ class Persyaratan extends CI_Controller {
     }
 
     public function delete($id){
-        if(check_id('berkas','surat_id',$id)==0){
+        if(check_id('berkas','surat_syarat_id',$id)==0){
             $this->persyaratan_m->hapus($id);
             $this->session->set_flashdata('success','Data persyaratan berhasil di hapus');
         }else{
